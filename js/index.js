@@ -156,7 +156,7 @@ class Person {
   
   displayResult();
 
-//   Validation
+// Validation
   function isValidName(name) {
     return name.trim() !== "";
   }
