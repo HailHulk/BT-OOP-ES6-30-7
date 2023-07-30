@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý học viện nghiên cứu và giảng dạy</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quản lý học viện nghiên cứu và giảng dạy</h1>
+    <div class="form">
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name">
+
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address">
+
+      <label for="code">Mã:</label>
+      <input type="text" id="code">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="type">Loại người dùng:</label>
+      <select id="type">
+        <option value="Student">Học viên</option>
+        <option value="Employee">Nhân viên</option>
+        <option value="Customer">Khách hàng</option>
+      </select>
+
+      <button onclick="addPerson()">Thêm người dùng</button>
+      <button onclick="removePerson()">Xóa người dùng</button>
+      <button onclick="updatePerson()">Cập nhật thông tin</button>
+
+      <label for="result">Kết quả:</label>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
